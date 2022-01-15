@@ -41,7 +41,7 @@ function onGameStarted() {
 
 function onGameEnded() {
   var lastGame = engine.history.first();
-  if (lastGame.bust >= 70) {
+  if (lastGame.bust >= 2) {
     redStreak = 0;
     } else {
     redStreak ++;
