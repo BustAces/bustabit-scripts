@@ -23,7 +23,6 @@ function againStart() {
         log('Betting restarted, current bet: ', currentBet / 100, 'bits @ ',config.payout.value,'x');
         engine.removeListener('GAME_ENDED', againStart);
         engine.on('GAME_STARTING', onGameStarted);
-        engine.on('GAME_ENDED', onGameEnded);
     } else {
         log('Looking for a redstreak of [',redStreakWait,'] games, current red streak is [',redStreak,'] games ..');
     }
